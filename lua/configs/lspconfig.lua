@@ -5,23 +5,27 @@ local capabilities = require("nvchad.configs.lspconfig").capabilities
 
 local lspconfig = require "lspconfig"
 local servers = {
-	"html",
-	"cssls",
-	"tsserver",
-	"clangd",
-	"rust_analyzer",
-	"yamlls",
-	"taplo",
-	"tflint",
-	"vimls",
-	"ast_grep",
-	"nginx_language_server",
-	"marksman",
-	"stylelint_lsp",
-	"jsonls",
-	"jqls",
-	"bashls",
-  "pylsp"
+  "ast_grep",
+  "bashls",
+  "checkstyle",
+  "clangd",
+  "cssls",
+  "google_java_format",
+  "html",
+  "java_language_server",
+  "jqls",
+  "jsonls",
+  "marksman",
+  "nginx_language_server",
+  "pylsp",
+  "rust_analyzer",
+  "semgrep",
+  "stylelint_lsp",
+  "taplo",
+  "tflint",
+  "tsserver",
+  "vimls",
+  "yamlls"
 }
 -- lsps with default config
 for _, lsp in ipairs(servers) do
