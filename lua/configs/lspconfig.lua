@@ -7,10 +7,8 @@ local lspconfig = require "lspconfig"
 local servers = {
   "ast_grep",
   "bashls",
-  "checkstyle",
   "clangd",
   "cssls",
-  "google_java_format",
   "html",
   "java_language_server",
   "jqls",
@@ -19,7 +17,6 @@ local servers = {
   "nginx_language_server",
   "pylsp",
   "rust_analyzer",
-  "semgrep",
   "stylelint_lsp",
   "taplo",
   "tflint",
