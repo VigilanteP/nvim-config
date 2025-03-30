@@ -20,7 +20,7 @@ local servers = {
   "stylelint_lsp",
   "taplo",
   "tflint",
-  "tsserver",
+  "ts_ls",
   "vimls",
   "yamlls"
 }
