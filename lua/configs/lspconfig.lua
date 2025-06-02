@@ -5,7 +5,6 @@ local capabilities = require("nvchad.configs.lspconfig").capabilities
 
 local lspconfig = require "lspconfig"
 local servers = {
-  "ast_grep",
   "bashls",
   "clangd",
   "cssls",
@@ -32,3 +31,16 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities,
   }
 end
+
+lspconfig.pylsp.setup {
+  settings = {
+    pylsp = {
+      plugins = {
+        pycodestyle = {
+          enabled = true,
+          maxLineLength = 88
+        },
+      },
+    },
+  },
+}

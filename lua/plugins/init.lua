@@ -62,9 +62,8 @@ return {
         "json-lsp", -- json lsp
         "jsonlint", -- json linter
 
-        -- ast-grep covers the majority of formats I use but we can pick and choose where we want to use it
-        -- Provides LSP/linter/formatter for all of c,cpp,rust,go,c#,java,js,jsx,tsx,html,css,kotlin,dart,lua
-        "ast-grep",
+        -- python stuff
+        "black",
 
         -- Shell scripts
         "bash-language-server", -- bash lsp
@@ -138,5 +137,18 @@ return {
         -- },
       },
   	},
+  },
+  {
+    "mustache/vim-mustache-handlebars",
+    ft = { "handlebars", "mustache", "html.mustache" },
+    init = function()
+      -- Force Neovim to treat *.mustache files as 'handlebars'
+      vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+        pattern = "*.mustache",
+        callback = function()
+          vim.bo.filetype = "handlebars"
+        end,
+      })
+    end,
   },
 }

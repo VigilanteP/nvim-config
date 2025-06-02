@@ -8,12 +8,7 @@ local options = {
 		css = { "prettierd" },
 		html = { "prettierd" },
 
-    java = { "ast-grep" },
-    c = { "ast-grep" },
-    cpp = { "ast-grep" },
-    python = { "ast-grep" },
-    javascript = { "ast-grep" },
-    rust = { "ast-grep" },
+    -- python = { "black" },
 
     json = { "fixjson" },
     markdown = { "markdownlint" },
