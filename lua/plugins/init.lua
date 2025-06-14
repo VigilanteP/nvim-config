@@ -44,9 +44,7 @@ return {
         -- web dev stuff
         "css-lsp",
         "html-lsp",
-        "typescript-language-server",
         "deno",
-        "prettier",
         "prettierd",
 
         -- c/cpp stuff
@@ -56,14 +54,16 @@ return {
         -- java stuff
         "checkstyle", -- checkstyle (used in some chewy projects)
         "gradle-language-server", -- gradle lsp
+        "google-java-format",
 
         -- json stuff
         "fixjson", -- json formatted
         "json-lsp", -- json lsp
-        "jsonlint", -- json linter
+        "jqls",
 
         -- python stuff
         "black",
+        "pylsp",
 
         -- Shell scripts
         "bash-language-server", -- bash lsp
@@ -85,7 +85,7 @@ return {
         ---- Docker
         "docker-compose-language-service", -- docker compose lsp
         "dockerfile-language-server", -- dockerfile lsp
-        "hadolint", -- docker lint
+        "dprint", -- dockerfile formatter
 
         --- Markdown
         "marksman",
@@ -97,7 +97,7 @@ return {
         "taplo",
 
         --- Terraform
-        "tflint",
+        "terraform",
 
         --- XML
         "xmlformatter",
@@ -128,7 +128,9 @@ return {
         "json",
         "java",
         "bash",
-        "fish"
+        "fish",
+        "terraform",
+        "dockerfile",
       },
       indent = {
         enable = true,

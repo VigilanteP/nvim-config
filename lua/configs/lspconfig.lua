@@ -15,7 +15,6 @@ local servers = {
   "marksman",
   "nginx_language_server",
   "pylsp",
-  "rust_analyzer",
   "stylelint_lsp",
   "taplo",
   "tflint",
