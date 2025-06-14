@@ -19,7 +19,6 @@ local servers = {
   "stylelint_lsp",
   "taplo",
   "tflint",
-  "ts_ls",
   "vimls",
   "yamlls"
 }
