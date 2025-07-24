@@ -1,4 +1,4 @@
--- EXAMPLE 
+-- EXAMPLE
 local on_attach = require("nvchad.configs.lspconfig").on_attach
 local on_init = require("nvchad.configs.lspconfig").on_init
 local capabilities = require("nvchad.configs.lspconfig").capabilities
@@ -9,17 +9,19 @@ local servers = {
   "clangd",
   "cssls",
   "html",
+  "gradle_ls",
   "java_language_server",
   "jqls",
   "jsonls",
   "marksman",
   "nginx_language_server",
   "pylsp",
+  "rust_analyzer",
   "stylelint_lsp",
   "taplo",
   "tflint",
   "vimls",
-  "yamlls"
+  "yamlls",
 }
 -- lsps with default config
 for _, lsp in ipairs(servers) do
@@ -36,7 +38,7 @@ lspconfig.pylsp.setup {
       plugins = {
         pycodestyle = {
           enabled = true,
-          maxLineLength = 88
+          maxLineLength = 88,
         },
       },
     },
