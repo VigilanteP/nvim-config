@@ -57,7 +57,8 @@ return {
         "google-java-format",
 
         -- json stuff
-        "fixjson", -- json formatted
+        -- "fixjson", -- json formatted
+        "semgrep",
         "json-lsp", -- json lsp
         "jqls",
 

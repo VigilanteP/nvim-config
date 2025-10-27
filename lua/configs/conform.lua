@@ -12,7 +12,7 @@ local options = {
 		css = { "prettierd" },
 		html = { "prettierd" },
     javascript ={ "prettierd" },
-    json = { "fixjson" },
+    json = { "semgrep" },
 
     -- Scripting
 		lua = { "stylua" },
